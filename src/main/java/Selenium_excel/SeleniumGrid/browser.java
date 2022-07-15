@@ -21,7 +21,7 @@ public class browser {
 	/*DesiredCapabilities caps = new DesiredCapabilities();
 	caps.setBrowserName("chrome");*/
 	
-	driver =  WebDriverManager.chromedriver().create();
+	driver =  WebDriverManager.edgedriver().create();
 	return driver;
 	}
 }
