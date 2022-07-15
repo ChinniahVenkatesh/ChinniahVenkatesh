@@ -32,9 +32,7 @@ public class Demo extends browser {
 			driver.switchTo().window(i.next());
 		}
 		driver.get("https://www.espncricinfo.com");
-		driver.switchTo().window(parent);
-		
-		
+		driver.switchTo().window(parent);	
 	}
 
 }
