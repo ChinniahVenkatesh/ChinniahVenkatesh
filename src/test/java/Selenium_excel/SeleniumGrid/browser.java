@@ -18,10 +18,9 @@ public class browser {
 	
 	public WebDriver browserInstallation() throws MalformedURLException
 	{
-	/*DesiredCapabilities caps = new DesiredCapabilities();
-	caps.setBrowserName("chrome");*/
-	
-	driver =  WebDriverManager.edgedriver().create();
+	DesiredCapabilities caps = new DesiredCapabilities();
+	caps.setBrowserName("chrome");
+	driver = new RemoteWebDriver(new URL("http://192.168.1.102:4444"),caps);
 	return driver;
 	}
 }
